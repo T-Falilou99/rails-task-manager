@@ -1,0 +1,8 @@
+<h1>Les tâches</h1>
+
+  <% @tasks.each do |task| %>
+    <p> Titre: <%= task.title %></p>
+    <p> Détails: <%= task.details %></p>
+    <p>Complète ?:<%= task.completed ? 'Oui' : 'Non' %></p>
+
+  <% end%>
